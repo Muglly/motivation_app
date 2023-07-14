@@ -29,6 +29,7 @@
         android:hint="@string/your_name"
         android:inputType="text"
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:textSize="22sp" />
 
     <Button
