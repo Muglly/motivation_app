@@ -11,32 +11,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple"
-        android:paddingVertical="16dp"
-        android:paddingHorizontal="8dp">
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="16dp">
 
         <ImageView
+            android:id="@+id/image_all"
             android:layout_width="0dp"
             android:layout_height="45dp"
             android:layout_weight="1"
             android:contentDescription="@string/ic_all_inclusive_description"
             android:src="@drawable/ic_all_inclusive"
-            app:tint="@color/white" />
+            />
 
         <ImageView
+            android:id="@+id/image_emoji"
             android:layout_width="0dp"
             android:layout_height="45dp"
             android:layout_weight="1"
             android:contentDescription="@string/ic_emoji_description"
             android:src="@drawable/ic_emoji"
-            app:tint="@color/light_purple" />
+            />
 
         <ImageView
+            android:id="@+id/image_sunny"
             android:layout_width="0dp"
             android:layout_height="45dp"
             android:layout_weight="1"
             android:contentDescription="@string/ic_wb_sunny_description"
             android:src="@drawable/ic_wb_sunny"
-            app:tint="@color/light_purple" />
+            />
     </LinearLayout>
 
     <TextView
