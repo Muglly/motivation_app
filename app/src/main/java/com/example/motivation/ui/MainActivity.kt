@@ -6,12 +6,13 @@ import android.view.View
 import androidx.core.content.ContextCompat
 import com.example.motivation.infra.MotivationConstants
 import com.example.motivation.R
+import com.example.motivation.data.Mock
 import com.example.motivation.infra.SecurityPreference
 import com.example.motivation.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
-    private var categoryId = 1
+    private var categoryId = MotivationConstants.FILTER.ALL
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         handleUserName()
         handleFilter(R.id.image_all)
+        handleNextPhrase()
 
 
         binding.buttonNewPhrase.setOnClickListener(this)
@@ -31,7 +33,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(view: View) {
         if (view.id == R.id.button_new_phrase) {
-            println("oi")
+            handleNextPhrase()
         } else if (view.id in listOf(
                 R.id.image_all,
                 R.id.image_emoji,
@@ -47,6 +49,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val name =
             SecurityPreference(this).getString(MotivationConstants.KEY.USER_NAME)
         binding.TextUserName.text = "Olá, $name!"
+    }
+
+    private fun handleNextPhrase() {
+       val phrase = Mock().getPhrase(categoryId)
+        binding.textPhrase.text = phrase
     }
 
     private fun handleFilter(id: Int) {
@@ -100,5 +107,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 categoryId = MotivationConstants.FILTER.SUNNY
             }
         }
+
+        handleNextPhrase()
     }
 }
