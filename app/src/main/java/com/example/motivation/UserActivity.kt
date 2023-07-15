@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.example.motivation.databinding.ActivityMainBinding
 import com.example.motivation.databinding.ActivityUserBinding
 
 class UserActivity : AppCompatActivity(), View.OnClickListener {
@@ -31,10 +30,16 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
         val name = binding.editYourName.text.toString()
 
         if (name != "") {
+            SecurityPreference(this).storeString("USER_NAME", name)
+
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         } else {
-            Toast.makeText(this, R.string.validation_mandatory_name, Toast.LENGTH_LONG).show()
+            Toast.makeText(
+                this,
+                R.string.validation_mandatory_name,
+                Toast.LENGTH_LONG
+            ).show()
         }
     }
 }
