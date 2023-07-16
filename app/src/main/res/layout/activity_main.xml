@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.MainActivity">
 
     <LinearLayout
@@ -20,8 +20,7 @@
             android:layout_height="45dp"
             android:layout_weight="1"
             android:contentDescription="@string/ic_all_inclusive_description"
-            android:src="@drawable/ic_all_inclusive"
-            />
+            android:src="@drawable/ic_all_inclusive" />
 
         <ImageView
             android:id="@+id/image_emoji"
@@ -29,8 +28,7 @@
             android:layout_height="45dp"
             android:layout_weight="1"
             android:contentDescription="@string/ic_emoji_description"
-            android:src="@drawable/ic_emoji"
-            />
+            android:src="@drawable/ic_emoji" />
 
         <ImageView
             android:id="@+id/image_sunny"
@@ -38,8 +36,7 @@
             android:layout_height="45dp"
             android:layout_weight="1"
             android:contentDescription="@string/ic_wb_sunny_description"
-            android:src="@drawable/ic_wb_sunny"
-            />
+            android:src="@drawable/ic_wb_sunny" />
     </LinearLayout>
 
     <TextView
@@ -51,6 +48,7 @@
         android:layout_marginTop="32dp"
         android:fontFamily="@font/cabin"
         android:text="@string/user"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 
     <TextView
@@ -83,6 +81,7 @@
         android:backgroundTint="@color/dark_purple"
         android:fontFamily="@font/cabin"
         android:text="@string/new_phrase"
-        android:textAllCaps="true" />
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
 
 </RelativeLayout>

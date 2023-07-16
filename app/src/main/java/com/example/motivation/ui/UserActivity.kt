@@ -42,7 +42,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun handleSave() {
-        val name = binding.editYourName.text.toString()
+        val name: String = binding.editYourName.text.toString()
 
         if (name != "") {
             SecurityPreference(this).storeString(
