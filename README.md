@@ -5,7 +5,7 @@
   <a href="https://kotlinlang.org/" target="_blank"><img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" target="_blank"></a>
 </div>
 
-Motivation é um aplicativo *android nativo* desenvolvido com Kotlin, onde o foco foi trabalhar o fundamento de ```view binding```, ```navegação``` e ```siclos de vida da Activity```
+Motivation é um aplicativo *android nativo* desenvolvido com Kotlin, onde o foco foi trabalhar o fundamento de ```"view binding"```, ```"navegação"``` e ```"siclos de vida da Activity"```
 
 Dentro dessa aplicação é possível:
 
@@ -13,12 +13,17 @@ Dentro dessa aplicação é possível:
 - escolher categorias das frases
 - mudar de frase
 
-<div style="display: flex; justify-content: center;">
-  <img src="https://raw.githubusercontent.com/Muglly/motivation_app/master/assets_github/home.png" alt="" style="width: 320px; margin: 10px;" />
-  <img src="https://raw.githubusercontent.com/Muglly/motivation_app/master/assets_github/categoria-1.png" alt="" style="width: 320px; margin: 10px;" />
-  <img src="https://raw.githubusercontent.com/Muglly/motivation_app/master/assets_github/categoria-2.png" alt="" style="width: 320px; margin: 10px;" />
-  <img src="https://raw.githubusercontent.com/Muglly/motivation_app/master/assets_github/categoria-3.png" alt="" style="width: 320px; margin: 10px;" />
+<div style="display: flex; justify-content: center; flex-wrap: wrap;" align='center'>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <img src="https://raw.githubusercontent.com/Muglly/motivation_app/master/assets_github/home.png" alt="" style="width: 320px;" />
+    <img src="https://raw.githubusercontent.com/Muglly/motivation_app/master/assets_github/categoria-1.png" alt="" style="width: 320px;" />
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <img src="https://raw.githubusercontent.com/Muglly/motivation_app/master/assets_github/categoria-2.png" alt="" style="width: 320px;" />
+    <img src="https://raw.githubusercontent.com/Muglly/motivation_app/master/assets_github/categoria-3.png" alt="" style="width: 320px;" />
+  </div>
 </div>
+
 
 
 ## 🔨 Tecnologias:
